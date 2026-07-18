@@ -1,7 +1,7 @@
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
-vim.opt.shiftwidth = 8
+vim.opt.shiftwidth = 4
 
 -- Turn off relative numbers in insert mode
 vim.api.nvim_create_autocmd("InsertEnter", {
@@ -23,3 +23,8 @@ vim.opt.incsearch = true
 
 -- lsp
 vim.lsp.enable("lua_ls") 
+
+-- Dont scroll away
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+
